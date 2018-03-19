@@ -30,13 +30,14 @@ const config = {
   module: {
     rules: [
       {
-        test: /(\.jsx|\.js)$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
+        enforce: 'pre',
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
       },
       {
-        test: /(\.jsx|\.js)$/,
-        loader: 'eslint-loader',
+        test: /\.js$/,
+        loader: 'babel-loader',
         exclude: /node_modules/
       }
     ]
