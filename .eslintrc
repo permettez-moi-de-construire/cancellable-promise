@@ -22,7 +22,7 @@
   "parser": "babel-eslint",
 
   "plugins": [
-    
+
   ],
 
   "rules": {
@@ -157,7 +157,7 @@
     "quote-props": 0,
     "quotes": [2, "single", "avoid-escape"],
     "radix": 2,
-    "semi": [2, "always"],
+    "semi": [2, "never"],
     "semi-spacing": 0,
     "sort-vars": 0,
     "space-before-blocks": [2, "always"],

@@ -41,6 +41,14 @@ const config = {
       }
     ]
   },
+  externals: {
+    lodash: {
+      commonjs: 'lodash',
+      commonjs2: 'lodash',
+      amd: '_',
+      root: '_'
+    }
+  },
   resolve: {
     modules: [path.resolve('./node_modules'), path.resolve('./src')],
     extensions: ['.json', '.js']
