@@ -1,6 +1,6 @@
 {
-  "name": "utm-parser",
-  "version": "1.0.2",
+  "name": "@permettezmoideconstruire/utm-parser",
+  "version": "0.0.1",
   "description": "Produce universal library with webpack and es6",
   "main": "lib/utm-parser.min.js",
   "scripts": {
