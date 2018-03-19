@@ -1,10 +1,22 @@
-import { camelCase, mapValues, pick } from 'lodash'
+import { camelCase, mapKeys, pick } from 'lodash'
 
 class UtmParser {
-  static storeUtmParams(storageKey, storage, queryString) {
-    const sessionLeadSource = storage.get(storageKey)
+  static defaultParamNames = [
+    'utm_source',
+    'utm_medium',
+    'utm_campaign',
+    'utm_term',
+    'utm_content'
+  ]
 
+  static storeUtmParams(
+    storageKey,
+    storage,
+    queryString
+  ) {
     if (queryString.utm_source) {
+      const sessionLeadSource = storage.get(storageKey)
+
       // If there is already a source for the session
       // do not record it again
       if (sessionLeadSource && sessionLeadSource.utmSource) {
@@ -12,25 +24,22 @@ class UtmParser {
         return
       }
 
-      const storableUtmParams = this.parseUtmParams(queryString)
+      const storableUtmParams = this.parseParams(
+        queryString,
+        this.defaultParamNames
+      )
 
       storage.set(storageKey, storableUtmParams)
     }
   }
 
-  static parseUtmParams(
+  static parseParams(
     queryString,
-    paramNames = [
-      'utm_source',
-      'utm_medium',
-      'utm_campaign',
-      'utm_term',
-      'utm_content'
-    ]
+    paramNames
   ) {
     const filteredQueryString = pick(queryString, paramNames)
 
-    return mapValues(filteredQueryString, camelCase)
+    return mapKeys(filteredQueryString, (v, k) => camelCase(k))
   }
 }
 
