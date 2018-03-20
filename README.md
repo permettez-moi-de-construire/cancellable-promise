@@ -2,7 +2,7 @@
 
 Webpack based boilerplate for producing libraries (Input: ES6, Output: universal library)
 
-[![Build status](https://travis-ci.org/permettez-moi-de-construire/store-utm.svg?branch=master)]
+![Build status](https://travis-ci.org/permettez-moi-de-construire/store-utm.svg?branch=master)
 
 ## Process
 
