@@ -3,17 +3,26 @@ const UglifyJsPlugin = webpack.optimize.UglifyJsPlugin
 const path = require('path')
 const env = require('yargs').argv.env
 const pkg = require('./package.json')
+const _ = require('lodash')
 
-const libraryName = pkg.name
+const packageName = pkg.name.split('/').pop()
+
+const libraryName = _.camelCase(packageName)
+const fileName = _.kebabCase(packageName)
+
+console.log(pkg.name)
+console.log(packageName)
+console.log(libraryName)
+console.log(fileName)
 
 let plugins = []
 let outputFile
 
 if (env === 'build') {
   plugins.push(new UglifyJsPlugin({ minimize: true }))
-  outputFile = libraryName + '.min.js'
+  outputFile = fileName + '.min.js'
 } else {
-  outputFile = libraryName + '.js'
+  outputFile = fileName + '.js'
 }
 
 const config = {
