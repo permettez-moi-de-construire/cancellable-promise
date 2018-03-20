@@ -1,7 +1,7 @@
 {
   "name": "@permettezmoideconstruire/utm-parser",
   "version": "0.0.1",
-  "description": "Produce universal library with webpack and es6",
+  "description": "Store query utm parameters to a get/set store",
   "main": "lib/utm-parser.min.js",
   "scripts": {
     "compile": "webpack --env dev && webpack --env build",
@@ -12,23 +12,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krasimir/webpack-library-starter.git"
+    "url": "git@github.com:permettez-moi-de-construire/store-utm.git"
   },
   "keywords": [
-    "webpack",
     "es6",
-    "starter",
     "library",
     "universal",
-    "umd",
-    "commonjs"
+    "umd"
   ],
-  "author": "Krasimir Tsonev",
+  "author": "Cyril CHAPON",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/krasimir/webpack-library-starter/issues"
+    "url": "https://github.com/permettez-moi-de-construire/store-utm/issues"
   },
-  "homepage": "https://github.com/krasimir/webpack-library-starter",
+  "homepage": "https://github.com/permettez-moi-de-construire/store-utm",
   "devDependencies": {
     "@babel/cli": "7.0.0-beta.42",
     "@babel/core": "7.0.0-beta.42",
@@ -47,5 +44,7 @@
     "webpack": "^3.10.0",
     "yargs": "^10.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.5"
+  }
 }
