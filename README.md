@@ -2,9 +2,7 @@
 
 Webpack based boilerplate for producing libraries (Input: ES6, Output: universal library)
 
-[![Build status](https://travis-ci.org/permettez-moi-de-construire/store-utm.svg?branch=master)](https://travis-ci.org/permettez-moi-de-construire/store-utm.svg?branch=master)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/85b6789bb4dbdf459f04/maintainability)](https://codeclimate.com/github/permettez-moi-de-construire/store-utm/maintainability)
+[![Build status](https://travis-ci.org/permettez-moi-de-construire/store-utm.svg?branch=master)](https://travis-ci.org/permettez-moi-de-construire/store-utm.svg?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/85b6789bb4dbdf459f04/maintainability)](https://codeclimate.com/github/permettez-moi-de-construire/store-utm/maintainability)
 
 ## Process
 
