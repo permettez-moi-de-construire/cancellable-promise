@@ -1,4 +1,10 @@
-import MyLib from './MyLib.js'
+import CancelError from './CancelError'
+import CancelToken from './CancelToken'
+import cancellablePromise from './cancellablePromise'
 
-export { MyLib }
-export default MyLib
+export {
+  CancelError,
+  CancelToken,
+  cancellablePromise
+}
+export default cancellablePromise
