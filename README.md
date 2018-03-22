@@ -1,16 +1,19 @@
 # webpack-library-starter
 
-Non intrusive Promise wrapper to make it cancellable
+Universal, non intrusive, token based Promise wrapper to make it cancellable
 
 [![Build status](https://travis-ci.org/permettez-moi-de-construire/cancellable-promise.svg?branch=master)](https://travis-ci.org/permettez-moi-de-construire/cancellable-promise.svg?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/f450bd914887df9c6ddc/maintainability)](https://codeclimate.com/github/permettez-moi-de-construire/cancellable-promise/maintainability)
 
 ## Installation
 
+### npm
+
 ```
 npm install @permettezmoideconstruire/cancellable-promise
 ```
 
-or include
+### Legacy `<script>` tag
+include
 
 ```
 <script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise"></script>
@@ -24,6 +27,14 @@ You can specify a npm release with
 
 ## Usage
 
+:warning: Either import method rely on a global Promise object.
+
+It's compatible with node.js implementation, and most browsers one.
+
+You should [polyfill Promise](https://github.com/zloirock/core-js) for older browsers though.
+
+### Import
+
 ```
 // Import
 import {
@@ -31,16 +42,21 @@ import {
   CancelError,
   CancelToken
 } from '@permettezmoideconstruire/cancellable-promise'
+```
 
-// --- OR ---
+OR
 
+```
 const {
   cancellablePromise,
   CancelError,
   CancelToken
 } = require('@permettezmoideconstruire/cancellable-promise').default
+```
 
+### Use
 
+```
 // Wrap a promise
 const initialPromise = SOMETHING_ASYNC()
 const cancelToken = new CancelToken()
