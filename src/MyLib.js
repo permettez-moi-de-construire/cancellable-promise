@@ -1,5 +1,5 @@
 class MyLib {
-  constructor() {
+  constructor () {
     this.name = 'foo'
   }
 }
