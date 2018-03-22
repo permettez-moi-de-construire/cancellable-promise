@@ -1,4 +1,4 @@
-import UtmParser from './UtmParser.js'
+import MyLib from './MyLib.js'
 
-export { UtmParser }
-export default UtmParser
+export { MyLib }
+export default MyLib
