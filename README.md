@@ -27,7 +27,7 @@ You can specify a npm release with
 
 ## Usage
 
-:warning: Either import method rely on a global Promise object.
+:warning: Either import method rely on a **global `Promise` object**.
 
 It's compatible with node.js implementation, and most browsers one.
 
