@@ -10,11 +10,6 @@ const packageName = pkg.name.split('/').pop()
 const libraryName = _.camelCase(packageName)
 const fileName = _.kebabCase(packageName)
 
-console.log(pkg.name)
-console.log(packageName)
-console.log(libraryName)
-console.log(fileName)
-
 let plugins = []
 let outputFile
 
