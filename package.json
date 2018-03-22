@@ -2,7 +2,7 @@
   "name": "@permettezmoideconstruire/cancellable-promise",
   "version": "0.0.1",
   "description": "Non intrusive Promise wrapper to make it cancellable",
-  "main": "lib/cancellablePromise.js",
+  "main": "lib/cancellable-promises.js",
   "scripts": {
     "compile": "webpack --env dev && webpack --env build",
     "build": "npm run compile && npm run test",
