@@ -35,11 +35,14 @@ const config = {
       {
         enforce: 'pre',
         test: /\.js$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
+        loader: 'standard-loader',
+        exclude: /(node_modules)/,
+        options: {
+          parser: 'babel-eslint'
+        }
       },
       {
-        test: /(\.jsx|\.js)$/,
+        test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       }
