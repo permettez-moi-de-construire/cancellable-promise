@@ -8,20 +8,20 @@ Universal, non intrusive, token based Promise wrapper to make it cancellable
 
 ### npm
 
-```
+```bash
 npm install @permettezmoideconstruire/cancellable-promise
 ```
 
 ### Legacy `<script>` tag
 include
 
-```
+```html
 <script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise"></script>
 ```
 
 You can specify a npm release with
 
-```
+```html
 <script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise@0.0.2"></script>
 ```
 
@@ -35,7 +35,7 @@ You should [polyfill Promise](https://github.com/zloirock/core-js) for older bro
 
 ### Import
 
-```
+```javascript
 // Import
 import {
   cancellablePromise,
@@ -46,7 +46,7 @@ import {
 
 OR
 
-```
+```javascript
 const {
   cancellablePromise,
   CancelError,
@@ -56,7 +56,7 @@ const {
 
 ### Use
 
-```
+```javascript
 // Wrap a promise
 const initialPromise = SOMETHING_ASYNC()
 const cancelToken = new CancelToken()
