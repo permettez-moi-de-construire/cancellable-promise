@@ -51,7 +51,7 @@ const {
   cancellablePromise,
   CancelError,
   CancelToken
-} = require('@permettezmoideconstruire/cancellable-promise').default
+} = require('@permettezmoideconstruire/cancellable-promise')
 ```
 
 ### Use
