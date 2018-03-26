@@ -22,7 +22,7 @@ include
 You can specify a npm release with
 
 ```
-<script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise@0.0.1"></script>
+<script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise@0.0.2"></script>
 ```
 
 ## Usage
