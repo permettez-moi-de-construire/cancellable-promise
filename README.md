@@ -1,4 +1,4 @@
-# webpack-library-starter
+# Cancellable Promise
 
 Universal, non intrusive, token based Promise wrapper to make it cancellable
 
@@ -19,7 +19,7 @@ include
 <script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise"></script>
 ```
 
-You can specify a npm release with
+You can specify a npm release with `@`
 
 ```html
 <script src="https://unpkg.com/@permettezmoideconstruire/cancellable-promise@0.0.2"></script>
